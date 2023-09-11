@@ -1,7 +1,9 @@
-package model;
+package com.example.ListaDeTarefas.model;
 
 import jakarta.persistence.*;
+import org.hibernate.validator.constraints.NotBlank;
 
+import java.time.Instant;
 import java.util.Date;
 
 @Entity
@@ -25,8 +27,14 @@ public class Tarefa {
     @Column(nullable = false)
     private StatusTarefa status;
 
-    //getters and setters
+    //Construtor padrão
+    public Tarefa() {
+        this.dataCriacao = new Date();
+        this.status = StatusTarefa.PENDENTE;
+        this.descricao = "Tarefa sem descrição";
+    }
 
+    //getters and setters
 
     public Integer getId() {
         return id;

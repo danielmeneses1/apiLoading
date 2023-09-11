@@ -1,7 +1,6 @@
-package repository;
+package com.example.ListaDeTarefas.repository;
 
-import jakarta.persistence.Id;
-import model.Tarefa;
+import com.example.ListaDeTarefas.model.Tarefa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

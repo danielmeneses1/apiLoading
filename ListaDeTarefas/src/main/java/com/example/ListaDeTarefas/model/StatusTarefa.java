@@ -1,4 +1,4 @@
-package model;
+package com.example.ListaDeTarefas.model;
 
 public enum StatusTarefa {
     PENDENTE("pendente"),
