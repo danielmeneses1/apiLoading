@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import com.example.ListaDeTarefas.repository.ITarefa;
 
 import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class TaferaService {
@@ -38,10 +40,18 @@ public class TaferaService {
     }
 
     //metodo delete
-    public Boolean excluirTarefa(Long id){
+    public Boolean excluirTarefa(Long id) {
+        Optional<Tarefa> tarefaBuscada = repository.findById(id);
+        if (tarefaBuscada.isPresent()) {
+            repository.deleteById(id);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Boolean excluirTarefa2(Long id){
         repository.deleteById(id);
         return true;
     }
-
-
 }

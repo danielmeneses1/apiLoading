@@ -15,6 +15,7 @@ public class Tarefa {
     private Integer id;
 
     @Column(name="titulo", length = 100, nullable = true)
+    @NotBlank(message = "O titulo da tarefa não pode estar em branco")
     private String titulo;
 
     @Column(name="descricao", length = 100, nullable = false)
