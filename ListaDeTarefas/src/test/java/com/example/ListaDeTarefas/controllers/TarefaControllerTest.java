@@ -3,7 +3,6 @@ package com.example.ListaDeTarefas.controllers;
 import com.example.ListaDeTarefas.Service.TaferaService;
 import com.example.ListaDeTarefas.exceptions.TarefaValidationExceptions;
 import com.example.ListaDeTarefas.model.Tarefa;
-import com.example.ListaDeTarefas.controllers.TarefaController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -67,6 +66,7 @@ public class TarefaControllerTest {
     @Test
     public void testCriarTarefa_Valida() {
         Tarefa tarefa = new Tarefa();
+        tarefa.setTitulo("Tarefa");
         when(tarefaService.adicionarTarefa(tarefa)).thenReturn(tarefa);
 
         ResponseEntity<Tarefa> response = tarefaController.criarTarefa(tarefa);
@@ -89,7 +89,7 @@ public class TarefaControllerTest {
         Tarefa tarefa = new Tarefa();
         when(tarefaService.editarTarefa(tarefa)).thenReturn(tarefa);
 
-        ResponseEntity<Tarefa> response = tarefaController.editarPokemon(tarefa);
+        ResponseEntity<Tarefa> response = tarefaController.editarTarefa(tarefa);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(tarefa, response.getBody());

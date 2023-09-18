@@ -50,7 +50,7 @@ public class TarefaController {
     }
 
     @PutMapping
-    public ResponseEntity<Tarefa> editarPokemon(@RequestBody Tarefa tarefa) {
+    public ResponseEntity<Tarefa> editarTarefa(@RequestBody Tarefa tarefa) {
         return  ResponseEntity.status(200).body(tarefaService.editarTarefa(tarefa));
     }
 
