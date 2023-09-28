@@ -3,7 +3,6 @@ package com.example.ListaDeTarefas.model;
 import jakarta.persistence.*;
 import org.hibernate.validator.constraints.NotBlank;
 
-import java.time.Instant;
 import java.util.Date;
 
 @Entity

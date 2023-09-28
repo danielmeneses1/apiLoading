@@ -35,8 +35,8 @@ public class TaferaService {
 
     //metodo update
     public Tarefa editarTarefa(Tarefa tarefa){
-        Tarefa novaTarefa = repository.save(tarefa);
-        return novaTarefa;
+        Tarefa attTarefa = repository.save(tarefa);
+        return attTarefa;
     }
 
     //metodo delete
