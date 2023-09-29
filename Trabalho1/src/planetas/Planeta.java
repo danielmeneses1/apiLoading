@@ -8,7 +8,7 @@ public abstract class Planeta {
     protected int tempo;
 
     public void exibirPosicao(){
-        System.out.println("Posicao de "+ this.getClass().getSimpleName()+": x: "+ posicaoX + " y: "+ posicaoY);
+        System.out.println("Posicao de "+ this.getClass().getSimpleName()+" : x: "+ posicaoX + " y: "+ posicaoY);
     }
 
     public Planeta(String nome) {
