@@ -5,11 +5,11 @@ public abstract class Planeta {
     protected int translacao;
     protected int posicaoX;
     protected int posicaoY;
-    protected int valor;
+    protected int tempo;
 
-    protected int totalTranslacao(){
-        return translacao * valor;
-    };
+    public void exibirPosicao(){
+        System.out.println("Posicao de"+ this.getClass().getSimpleName()+"x: ("+ posicaoX + " y: "+ posicaoY);
+    }
 
     public Planeta(String nome) {
         Nome = nome;
@@ -43,11 +43,11 @@ public abstract class Planeta {
         this.posicaoY = posicaoY;
     }
 
-    public int getValor() {
-        return valor;
+    public int getTempo() {
+        return tempo;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setTempo(int tempo) {
+        this.tempo = tempo;
     }
 }

@@ -7,4 +7,9 @@ public class CSharp extends Planeta{
         this.Nome = "C#";
         this.translacao = 1;
     }
+
+    @Override
+    public void exibirPosicao() {
+
+    }
 }
