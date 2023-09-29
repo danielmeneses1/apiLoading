@@ -1,10 +1,9 @@
 package planetas;
 
-public class RubyOnRails extends Planeta {
+public class RubyOnRails extends Planeta implements IPlaneta{
 
     public RubyOnRails(String nome) {
         super(nome);
-        this.Nome = "Ruby";
         this.translacao = 2;
         this.posicaoX = 8;
         this.posicaoY = 11;
@@ -37,4 +36,6 @@ public class RubyOnRails extends Planeta {
             }
         }
     }
+
+
 }

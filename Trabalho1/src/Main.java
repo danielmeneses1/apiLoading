@@ -10,14 +10,12 @@ public class Main {
 
 
 
-        System.out.println(python.getPosicaoX());
-        System.out.println(python.getPosicaoY());
+        python.exibirPosicao();
 
         int momento = sc.nextInt();
         python.mover(momento);
 
+        python.exibirPosicao();
 
-        System.out.println(python.getPosicaoX());
-        System.out.println(python.getPosicaoY());
     }
 }

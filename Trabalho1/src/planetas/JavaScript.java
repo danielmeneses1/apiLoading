@@ -1,9 +1,8 @@
 package planetas;
 
-public class JavaScript extends Planeta{
+public class JavaScript extends Planeta implements IPlaneta{
     public JavaScript(String nome) {
         super(nome);
-        this.Nome = "JavaScript";
         this.translacao = 3;
         this.posicaoX = 8;
         this.posicaoY = 10;
@@ -32,4 +31,6 @@ public class JavaScript extends Planeta{
             }
         }
     }
+
+
 }

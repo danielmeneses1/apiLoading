@@ -1,16 +1,14 @@
 package planetas;
 
-public class Python extends Planeta{
+public class Python extends Planeta implements IPlaneta{
 
     public Python(String nome) {
         super(nome);
-        this.Nome = "Python";
         this.translacao = 4;
         this.posicaoX = 8;
         this.posicaoY = 9;
 
     }
-
 
   public void mover(int momento){
         int unidades = momento * translacao;
@@ -39,7 +37,11 @@ public class Python extends Planeta{
 
 
 
-   }}
+   }
+
+
+
+}
 
 
 
