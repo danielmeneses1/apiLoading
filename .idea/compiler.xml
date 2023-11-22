@@ -10,5 +10,10 @@
         <module name="ListaDeTarefas.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ListaDeTarefas" target="17" />
+      <module name="ListaDeTarefas.main" target="17" />
+      <module name="ListaDeTarefas.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
